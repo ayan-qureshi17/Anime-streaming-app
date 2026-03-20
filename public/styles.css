@@ -1,0 +1,50 @@
+/* CSS Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --header-height: 60px;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+}
